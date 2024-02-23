@@ -4,7 +4,27 @@
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu>a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* commons */
+body {
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+}
+
 main {
     flex-direction: column;
     /* debug */
@@ -15,25 +35,63 @@ main {
 .flex-container,
 .footer-container,
 .nav-container {
+
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     text-align: center;
 }
 
-.flex-container{
+.menu {
+    display: flex;
+    font-size: 0.4rem;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+a.button {
+    border-radius: 20px;
+    width: 60px;
+}
+
+.button.button-white {
+    background-color: rgb(255, 255, 255);
+}
+
+.button.black {
+    background-color: rgb(49, 51, 56);
+}
+
+.button.violet {
+    background-color: rgb(114, 137, 218);
+}
+
+a.login:hover {
+    color: rgb(37, 94, 233);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+    /*perche cosi prende tutti i bordi in modo uniforme?*/
+}
+
+div.menu>a {
+    width: calc(100% / 6);
+}
+
+/* .long-text{
+    flex-grow: 1;
+} */
+.flex-container {
     width: 100%;
 }
 
 .wid-big {
+    width: 80%;
+}
+
+.wid-mid {
     width: 60%;
 }
 
-.wid-mid{
-    width: 40%;
-}
-
-.wid-small{
+.wid-small {
     width: 20%;
 }
 
@@ -47,6 +105,7 @@ main {
 .grow {
     flex-grow: 1;
 }
+
 /* nav */
 .nav-container {
     height: 30px;
@@ -54,37 +113,54 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: space-between;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex-container.blue {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+
+header.flex-container {
+    background-color: rgb(37, 94, 233);
 }
 
 /* main */
 .very-big {
     width: 45%;
     /* debug */
-    height: 200px;
-    line-height: 200px;
+    /* height: 200px;
+    line-height: 200px; */
 }
 
 .verysmall-container {
     width: calc(100% / 6);
 }
 
-.footer-container{
-    justify-content: space-between;
+.footer-container {
+    /* justify-content: space-between; */
     /* debug */
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
 }
 
 /* footer */
 .foot {
-    width: 10%;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    width: 15%;
+    text-align: center;
 }
 
+/* img.logo{
+    max-height: 100%;
+} */
 footer-container {
-    margin-top: 1px;
-    margin-bottom: 1px;
     /* debug */
     height: 60px;
     line-height: 60px;
@@ -95,52 +171,67 @@ footer-container {
     /* debug */
     border: 1px dashed black;
 }
+
 .thebigone {
     height: 500px;
     line-height: 500px;
 }
+
 .verysmall-container,
 .small-container,
 .big-container {
     line-height: 300px;
     height: 300px;
 }
+
 .verysmall-container.tiffany {
     border: 1px dashed white;
 }
-.orange{
+
+/* .orange{
     background-color: rgb(218, 165, 32);
-}
-.darkpink {
+} */
+/* .darkpink {
     background-color: rgb(238, 130, 238);
-}
-.blue {
+} */
+/* .blue {
     background-color: blue;
-}
+} */
 .grey {
     background-color: rgb(211, 211, 211);
 }
+
 .lightblue {
     background-color: rgb(30, 144, 255);
 }
+
 .lightpink {
     background-color: rgb(255, 192, 203);
 }
+
 .darkgrey {
     background-color: rgb(35, 39, 42);
 }
+
 .pink {
     background-color: rgb(240, 128, 128);
 }
+
 .tiffany {
     background-color: rgb(32, 178, 170);
 }
+
 .lighttiffany {
     background-color: rgb(127, 255, 212);
 }
+
 .green {
     background-color: rgb(34, 139, 34);
 }
-.lightcyan {
+
+/* .lightcyan {
     background-color: rgb(173, 216, 230);
+} */
+.white {
+    color: rgb(255, 255, 255);
 }
