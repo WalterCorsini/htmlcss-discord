@@ -20,11 +20,35 @@ body {
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 20px;
-
 }
 
+h3{
+    font-size: 0.4rem;
+    padding-bottom: 10px;
+}
+
+.black-text{
+    font-size: 1,5rem;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.text-violet{
+    color: rgb(114, 137, 218);
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+}
+
+.very-big>div{
+    margin-bottom: 20px;
+}
+p{
+    font-size: 0.7rem;
+    text-align: left;
+}
 main {
     flex-direction: column;
     /* debug */
@@ -39,7 +63,7 @@ main {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    text-align: center;
+
 }
 
 .menu {
@@ -51,21 +75,55 @@ main {
 
 a.button {
     border-radius: 20px;
-    width: 60px;
+    
+}
+a.login{
+    width: 70px;
+}
+a.download-mac,
+a.open-discord,
+a.download-mac-two{
+    font-size: 0.7rem;
+    padding: 5px;
+}
+.verysmall.grow{
+    display: flex;
+    flex-direction: column;
 }
 
+.linguage-container{
+    display: flex;
+    margin-bottom: 10px;
+}
+img.flags{
+    height: 13px;
+    background-size: cover;
+    margin-right: 10px;
+}
+.languages{
+    font-size: 0.8rem;
+}
+.download-mac-two{
+    width: 100px;
+}
 .button.button-white {
     background-color: rgb(255, 255, 255);
 }
 
-.button.black {
+.button-black {
     background-color: rgb(49, 51, 56);
 }
 
-.button.violet {
+.button-violet {
     background-color: rgb(114, 137, 218);
 }
 
+.flex{
+    display: flex;
+}
+.dir-col{
+    flex-direction: column;
+}
 a.login:hover {
     color: rgb(37, 94, 233);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
@@ -76,15 +134,12 @@ div.menu>a {
     width: calc(100% / 6);
 }
 
-/* .long-text{
-    flex-grow: 1;
-} */
 .flex-container {
     width: 100%;
 }
 
 .wid-big {
-    width: 80%;
+    width: 90%;
 }
 
 .wid-mid {
@@ -92,14 +147,14 @@ div.menu>a {
 }
 
 .wid-small {
-    width: 20%;
+    width: 30%;
 }
 
 .pad-top-bot {
     margin-top: 20px;
     margin-bottom: 20px;
     /* debug */
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .grow {
@@ -129,16 +184,33 @@ header.flex-container {
     background-color: rgb(37, 94, 233);
 }
 
+.hero >.big-container{
+    background-image: url(../img/item1.svg);
+    background-size: cover;
+    margin-right: px;
+}
+
+.section-one>.big-container{
+    background-image: url(../img/item2.svg);
+    background-size: cover;
+}
+
+.section-two>.big-container{
+    background-image: url(../img/item3.svg);
+    background-size: cover;
+}
+
 /* main */
 .very-big {
-    width: 45%;
+    width: 60%;
     /* debug */
     /* height: 200px;
     line-height: 200px; */
 }
 
 .verysmall-container {
-    width: calc(100% / 6);
+    width: calc(100% / 5 - 10px);
+    margin-right: 10px;
 }
 
 .footer-container {
@@ -154,35 +226,63 @@ header.flex-container {
 /* footer */
 .foot {
     width: 15%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* img.logo{
     max-height: 100%;
 } */
-footer-container {
+footer> .flex-container {
+    border-top: 1px solid rgb(114, 137, 218);
+    
     /* debug */
-    height: 60px;
-    line-height: 60px;
+    /* height: 60px;
+    line-height: 60px; */
+
+}
+.icon-container>a{
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* DEBUG    DEBUG   DEBUG   DEBUG   DEBUG   DEBUG   DEBUG   DEBUG*/
-.nav {
-    /* debug */
+/* .nav {
+    debug
     border: 1px dashed black;
-}
+} */
 
 .thebigone {
-    height: 500px;
-    line-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
 
-.verysmall-container,
-.small-container,
+.align-center{
+    text-align: center;
+}
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+
+.bg-text-bottom{
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+}
+
+ .little-black-text{
+    font-size: 1rem;
+    margin-bottom: 10px;
+} 
+verysmall-container,
 .big-container {
     line-height: 300px;
     height: 300px;
 }
+
+
 
 .verysmall-container.tiffany {
     border: 1px dashed white;
@@ -234,4 +334,7 @@ footer-container {
 } */
 .white {
     color: rgb(255, 255, 255);
+}
+.violet{
+    color: rgb(114, 137, 218);
 }
