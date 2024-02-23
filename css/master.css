@@ -178,6 +178,8 @@ img {
 .flex-container.blue {
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 header.flex-container {
@@ -187,17 +189,22 @@ header.flex-container {
 .hero >.big-container{
     background-image: url(../img/item1.svg);
     background-size: cover;
-    margin-right: px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .section-one>.big-container{
     background-image: url(../img/item2.svg);
     background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .section-two>.big-container{
     background-image: url(../img/item3.svg);
     background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* main */
