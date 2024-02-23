@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.download-mac,
 a {
     color: inherit;
     text-decoration: none;
 }
 
-.menu>a:hover {
+.font-menu>a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -21,14 +21,21 @@ body {
 
 h1 {
     font-size: 2rem;
+}
+.mar-bot-20{
     margin-bottom: 20px;
 }
 
+mar-bot-10{
+    margin-bottom: 10px;
+}
 h3{
     font-size: 0.4rem;
     padding-bottom: 10px;
 }
-
+header{
+    background-color: rgb(37, 94, 233);
+}
 .black-text{
     font-size: 1,5rem;
     padding-top: 30px;
@@ -42,47 +49,28 @@ h3{
     padding-bottom: 5px;
 }
 
-.very-big>div{
-    margin-bottom: 20px;
-}
 p{
     font-size: 0.7rem;
     text-align: left;
 }
-main {
-    flex-direction: column;
-    /* debug */
-    /* background-color: rgb(125, 255, 255); */
-    /* height: 1000px; */
-}
 
-.flex-container,
-.footer-container,
-.nav-container {
-
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-
-}
-
-.menu {
-    display: flex;
+.font-menu {
     font-size: 0.4rem;
-    color: rgb(255, 255, 255);
-    justify-content: center;
 }
 
-a.button {
+.button {
     border-radius: 20px;
-    
+    font-size: 0.7rem;  
+    font-size: 0.7rem;
+
 }
-a.login{
+.button-login{
     width: 70px;
 }
-a.download-mac,
-a.open-discord,
-a.download-mac-two{
+.download-mac,
+.open-discord,
+.download-mac-two,
+.button-black{
     font-size: 0.7rem;
     padding: 5px;
 }
@@ -91,10 +79,6 @@ a.download-mac-two{
     flex-direction: column;
 }
 
-.linguage-container{
-    display: flex;
-    margin-bottom: 10px;
-}
 img.flags{
     height: 13px;
     background-size: cover;
@@ -106,7 +90,7 @@ img.flags{
 .download-mac-two{
     width: 100px;
 }
-.button.button-white {
+.button-white {
     background-color: rgb(255, 255, 255);
 }
 
@@ -121,40 +105,47 @@ img.flags{
 .flex{
     display: flex;
 }
+
 .dir-col{
     flex-direction: column;
 }
-a.login:hover {
-    color: rgb(37, 94, 233);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+.button:hover {
+     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
     /*perche cosi prende tutti i bordi in modo uniforme?*/
 }
-
+.button-login:hover{
+    color: rgb(37, 94, 233);
+}
 div.menu>a {
     width: calc(100% / 6);
 }
 
-.flex-container {
+.wid-100 {
     width: 100%;
 }
 
-.wid-big {
+.wid-90 {
     width: 90%;
 }
 
-.wid-mid {
+.wid-70{
+    width: 70%;
+}
+
+.wid-60 {
     width: 60%;
 }
 
-.wid-small {
+.wid-30 {
     width: 30%;
 }
 
-.pad-top-bot {
+.pad-top-20 {
     margin-top: 20px;
+}
+
+.pad-bot-20 {
     margin-bottom: 20px;
-    /* debug */
-    /* border: 1px dashed black; */
 }
 
 .grow {
@@ -162,23 +153,20 @@ div.menu>a {
 }
 
 /* nav */
-.nav-container {
+.nav {
     height: 30px;
     line-height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 
 img {
     max-width: 100%;
 }
-
-.flex-container.blue {
+.head {
     background-image: url(../img/jumbo.png);
     background-size: cover;
-    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -186,40 +174,31 @@ header.flex-container {
     background-color: rgb(37, 94, 233);
 }
 
-.hero >.big-container{
+.img-1{
     background-image: url(../img/item1.svg);
     background-size: cover;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.section-one>.big-container{
+.img-2{
     background-image: url(../img/item2.svg);
     background-size: cover;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.section-two>.big-container{
+.img-3{
     background-image: url(../img/item3.svg);
     background-size: cover;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-/* main */
-.very-big {
-    width: 60%;
-    /* debug */
-    /* height: 200px;
-    line-height: 200px; */
-}
-
 .verysmall-container {
     width: calc(100% / 5 - 10px);
     margin-right: 10px;
 }
-
 .footer-container {
     /* justify-content: space-between; */
     /* debug */
@@ -236,7 +215,7 @@ header.flex-container {
     /* text-align: center; */
 }
 
-/* img.logo{
+/* img{
     max-height: 100%;
 } */
 footer> .flex-container {
@@ -258,10 +237,14 @@ footer> .flex-container {
     border: 1px dashed black;
 } */
 
-.thebigone {
-    display: flex;
+.container-vertical-center{
     flex-direction: column;
     align-items: center;   
+}
+
+.container-horizontal-center{
+    flex-direction: row;
+    justify-content: center;
 }
 
 .align-center{
@@ -277,6 +260,8 @@ footer> .flex-container {
 .bg-text-bottom{
     background-image: url(../img/stars.svg);
     background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
  .little-black-text{
