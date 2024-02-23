@@ -1,20 +1,20 @@
+/*inserire onde e tag nell html*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.download-mac,
+
+/* commons */
 a {
     color: inherit;
     text-decoration: none;
 }
 
-.font-menu>a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+img {
+    max-width: 100%;
 }
 
-/* commons */
 body {
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -22,31 +22,19 @@ body {
 h1 {
     font-size: 2rem;
 }
-.mar-bot-20{
-    margin-bottom: 20px;
+
+h2{
+    font-size: 1,5rem;
 }
 
-mar-bot-10{
+h3{
+    font-size: 1rem;
     margin-bottom: 10px;
 }
-h3{
+
+h4{
     font-size: 0.4rem;
     padding-bottom: 10px;
-}
-header{
-    background-color: rgb(37, 94, 233);
-}
-.black-text{
-    font-size: 1,5rem;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-.text-violet{
-    color: rgb(114, 137, 218);
-    font-size: 0.8rem;
-    padding-bottom: 5px;
 }
 
 p{
@@ -54,70 +42,54 @@ p{
     text-align: left;
 }
 
-.font-menu {
-    font-size: 0.4rem;
-}
-
-.button {
-    border-radius: 20px;
-    font-size: 0.7rem;  
-    font-size: 0.7rem;
-
-}
-.button-login{
-    width: 70px;
-}
-.download-mac,
-.open-discord,
-.download-mac-two,
-.button-black{
-    font-size: 0.7rem;
-    padding: 5px;
-}
-.verysmall.grow{
-    display: flex;
+.container-vertical-center{
     flex-direction: column;
+    align-items: center;   
 }
 
-img.flags{
-    height: 13px;
-    background-size: cover;
-    margin-right: 10px;
-}
-.languages{
-    font-size: 0.8rem;
-}
-.download-mac-two{
-    width: 100px;
-}
-.button-white {
-    background-color: rgb(255, 255, 255);
+.container-horizontal-center{
+    flex-direction: row;
+    justify-content: center;
 }
 
-.button-black {
-    background-color: rgb(49, 51, 56);
+.align-center{
+    text-align: center;
+}
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
 }
 
-.button-violet {
-    background-color: rgb(114, 137, 218);
+.mar-bot-10{
+    margin-bottom: 10px;
 }
 
-.flex{
-    display: flex;
+.mar-bot-20{
+    margin-bottom: 20px;
 }
 
-.dir-col{
-    flex-direction: column;
+mar-bot-10{
+    margin-bottom: 10px;
 }
-.button:hover {
-     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
-    /*perche cosi prende tutti i bordi in modo uniforme?*/
+
+.mar-top-10{
+    margin-top: 10px;
 }
-.button-login:hover{
-    color: rgb(37, 94, 233);
+.pad-top-30{
+    padding-top: 30px;
 }
-div.menu>a {
-    width: calc(100% / 6);
+.pad-top-20 {
+    margin-top: 20px;
+}
+
+.pad-top-10{
+    padding-top: 10px;
+}
+
+.pad-bot-20 {
+    margin-bottom: 20px;
 }
 
 .wid-100 {
@@ -140,19 +112,114 @@ div.menu>a {
     width: 30%;
 }
 
-.pad-top-20 {
-    margin-top: 20px;
+.wid-15 {
+    width: 15%;
 }
-
-.pad-bot-20 {
-    margin-bottom: 20px;
+.flex{
+    display: flex;
 }
 
 .grow {
     flex-grow: 1;
 }
 
-/* nav */
+.dir-col{
+    flex-direction: column;
+}
+
+.container{
+    border-bottom: 1px solid rgb(114, 137, 218);
+}
+
+.grey {
+    background-color: rgb(211, 211, 211);
+}
+
+.darkgrey {
+    background-color: rgb(35, 39, 42);
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.violet{
+    color: rgb(114, 137, 218);
+}
+
+.font-menu>a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header{
+    background-color: rgb(37, 94, 233);
+}
+
+.text-violet{
+    color: rgb(114, 137, 218);
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+}
+
+.font-menu {
+    font-size: 0.4rem;
+}
+
+.button {
+    border-radius: 20px;
+    font-size: 0.7rem;  
+    font-size: 0.7rem;
+}
+
+.button-login{
+    width: 70px;
+}
+
+.download-mac,
+.open-discord,
+.download-mac-two,
+.button-black{
+    font-size: 0.7rem;
+    padding: 5px;
+}
+
+img.flags{
+    height: 13px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.languages{
+    font-size: 0.8rem;
+}
+
+.download-mac-two{
+    width: 100px;
+}
+.button-white {
+    background-color: rgb(255, 255, 255);
+}
+
+.button-black {
+    background-color: rgb(49, 51, 56);
+}
+
+.button-violet {
+    background-color: rgb(114, 137, 218);
+}
+
+.button:hover {
+     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+    /*perche cosi prende tutti i bordi in modo uniforme?*/
+}
+.button-login:hover{
+    color: rgb(37, 94, 233);
+}
+div.menu>a {
+    width: calc(100% / 6);
+}
+
 .nav {
     height: 30px;
     line-height: 30px;
@@ -161,17 +228,14 @@ div.menu>a {
     justify-content: space-around;
 }
 
-img {
-    max-width: 100%;
+header.flex-container {
+    background-color: rgb(37, 94, 233);
 }
+
 .head {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-header.flex-container {
-    background-color: rgb(37, 94, 233);
 }
 
 .img-1{
@@ -195,67 +259,25 @@ header.flex-container {
     background-repeat: no-repeat;
 }
 
-.verysmall-container {
+.container-5{
     width: calc(100% / 5 - 10px);
     margin-right: 10px;
 }
+
 .footer-container {
-    /* justify-content: space-between; */
-    /* debug */
     height: 30px;
     line-height: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    justify-content: space-between;
-}
+    justify-content: space-around;
+}/* riguardsare centratura footer*/
 
-/* footer */
-.foot {
-    width: 15%;
-    /* text-align: center; */
-}
-
-/* img{
-    max-height: 100%;
-} */
 footer> .flex-container {
-    border-top: 1px solid rgb(114, 137, 218);
-    
-    /* debug */
-    /* height: 60px;
-    line-height: 60px; */
+    border-top: 1px solid rgb(114, 137, 218); 
 
 }
-.icon-container>a{
-    display: flex;
-    justify-content: flex-start;
+.icon-container{
+    justify-content: space-around;
 }
 
-/* DEBUG    DEBUG   DEBUG   DEBUG   DEBUG   DEBUG   DEBUG   DEBUG*/
-/* .nav {
-    debug
-    border: 1px dashed black;
-} */
-
-.container-vertical-center{
-    flex-direction: column;
-    align-items: center;   
-}
-
-.container-horizontal-center{
-    flex-direction: row;
-    justify-content: center;
-}
-
-.align-center{
-    text-align: center;
-}
-.align-left{
-    text-align: left;
-}
-.align-right{
-    text-align: right;
-}
 
 .bg-text-bottom{
     background-image: url(../img/stars.svg);
@@ -264,69 +286,5 @@ footer> .flex-container {
     background-repeat: no-repeat;
 }
 
- .little-black-text{
-    font-size: 1rem;
-    margin-bottom: 10px;
-} 
-verysmall-container,
-.big-container {
-    line-height: 300px;
-    height: 300px;
-}
 
 
-
-.verysmall-container.tiffany {
-    border: 1px dashed white;
-}
-
-/* .orange{
-    background-color: rgb(218, 165, 32);
-} */
-/* .darkpink {
-    background-color: rgb(238, 130, 238);
-} */
-/* .blue {
-    background-color: blue;
-} */
-.grey {
-    background-color: rgb(211, 211, 211);
-}
-
-.lightblue {
-    background-color: rgb(30, 144, 255);
-}
-
-.lightpink {
-    background-color: rgb(255, 192, 203);
-}
-
-.darkgrey {
-    background-color: rgb(35, 39, 42);
-}
-
-.pink {
-    background-color: rgb(240, 128, 128);
-}
-
-.tiffany {
-    background-color: rgb(32, 178, 170);
-}
-
-.lighttiffany {
-    background-color: rgb(127, 255, 212);
-}
-
-.green {
-    background-color: rgb(34, 139, 34);
-}
-
-/* .lightcyan {
-    background-color: rgb(173, 216, 230);
-} */
-.white {
-    color: rgb(255, 255, 255);
-}
-.violet{
-    color: rgb(114, 137, 218);
-}
