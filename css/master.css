@@ -262,14 +262,17 @@ img.flags {
 .head {
     background-image: url(../img/jumbo.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 500px;
+    justify-content: center;
 }
 
 .img-1 {
     background-image: url(../img/item1.svg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     min-height: 300px;
-    background-position: 100%;
+    background-position: 0;
     max-width: 35%;
 }
 
@@ -284,7 +287,6 @@ img.flags {
 
 .img-3 {
     background-image: url(../img/item3.svg);
-    background-size: cover;
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 300px;
@@ -296,4 +298,14 @@ img.flags {
     background-image: url(../img/stars.svg);
     background-size: cover;
     width: 40%;
+}
+
+.wave-gray{
+    margin-bottom: -5px;
+    filter:invert(110%) sepia(0%) saturate(3%) hue-rotate(-2deg) brightness(100%) contrast(65%);
+    width: 100%;
+}
+
+.rotate{
+    transform: rotate(180deg);
 }
