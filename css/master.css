@@ -187,7 +187,7 @@ header{
     text-decoration: underline;
     cursor: pointer;
 }
-
+/*impostare a font-menu e button un h3 o h4 che hanno lo stesso font size*/
 .font-menu {
     font-size: 1rem;
 }
@@ -214,7 +214,7 @@ img.flags{
     background-size: cover;
     margin-right: 10px;
 }
-
+/*assegnare un h3 o h4 e dargli questo font-size per essere riutilizzabile*/
 .languages{
     font-size: 0.8rem;
 }
