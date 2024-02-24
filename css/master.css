@@ -1,6 +1,6 @@
 /*inserire onde e tag nell html*/
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -33,12 +33,13 @@ h3{
 }
 
 h4{
-    font-size: 0.4rem;
+    font-size: 1rem;
+    font-weight: 300;
     padding-bottom: 10px;
 }
 
 p{
-    font-size: 0.7rem;
+    font-size: 1.3rem;
     text-align: left;
 }
 
@@ -55,9 +56,11 @@ p{
 .align-center{
     text-align: center;
 }
+
 .align-left{
     text-align: left;
 }
+
 .align-right{
     text-align: right;
 }
@@ -77,9 +80,20 @@ mar-bot-10{
 .mar-top-10{
     margin-top: 10px;
 }
+
+.mar-top-20{
+    margin-top: 20px;
+}
+
+.hm-20{
+    padding: 0 20px;
+}
+
+/*PADDING   PADDING   PADDING   PADDING   PADDING   */
 .pad-top-30{
     padding-top: 30px;
 }
+
 .pad-top-20 {
     margin-top: 20px;
 }
@@ -91,13 +105,17 @@ mar-bot-10{
 .pad-bot-20 {
     margin-bottom: 20px;
 }
-
+/*WIDHT     WIDHT     WIDHT     WIDHT     WIDHT     */
 .wid-100 {
     width: 100%;
 }
 
 .wid-90 {
     width: 90%;
+}
+
+.wid-50{
+    width: 50%;
 }
 
 .wid-70{
@@ -108,34 +126,31 @@ mar-bot-10{
     width: 60%;
 }
 
-.wid-30 {
-    width: 30%;
+.wid-15 {
+    width:15%;
 }
 
 .wid-15 {
     width: 15%;
 }
-.flex{
-    display: flex;
+/*BG-COLOR     BG-COLOR     BG-COLOR     BG-COLOR     */
+.bg-white {
+    background-color: rgb(255, 255, 255);
 }
 
-.grow {
-    flex-grow: 1;
+.bg-violet {
+    background-color: rgb(114, 137, 218);   
 }
 
-.dir-col{
-    flex-direction: column;
-}
-
-.container{
-    border-bottom: 1px solid rgb(114, 137, 218);
-}
-
-.grey {
+.bg-grey {
     background-color: rgb(211, 211, 211);
 }
 
-.darkgrey {
+.bg-darkgrey {
+    background-color: rgb(35, 39, 42);
+}
+
+.bg-black{
     background-color: rgb(35, 39, 42);
 }
 
@@ -147,41 +162,58 @@ mar-bot-10{
     color: rgb(114, 137, 218);
 }
 
-.font-menu>a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.flex{
+    display: flex;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+/*NAV   NAV   NAV   NAV   NAV   NAV   NAV   NAV   */
+.button-login:hover,
+.download-mac:hover{
+    color: rgb(37, 94, 233);
+}
+
+div.menu>a {
+    width: calc(100% / 6);
+}
+
+.nav {    
+    justify-content: space-around;
 }
 
 header{
     background-color: rgb(37, 94, 233);
 }
 
-.text-violet{
-    color: rgb(114, 137, 218);
-    font-size: 0.8rem;
-    padding-bottom: 5px;
+
+
+.font-menu>a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .font-menu {
-    font-size: 0.4rem;
+    font-size: 1rem;
 }
 
 .button {
     border-radius: 20px;
-    font-size: 0.7rem;  
-    font-size: 0.7rem;
+    font-size: 1rem;  
 }
 
 .button-login{
     width: 70px;
 }
 
-.download-mac,
-.open-discord,
-.download-mac-two,
-.button-black{
-    font-size: 0.7rem;
-    padding: 5px;
+.button-reg{
+    height: 40px;
+    line-height: 40px;
+}
+.pad-button{
+    padding: 10px;
 }
 
 img.flags{
@@ -195,43 +227,41 @@ img.flags{
 }
 
 .download-mac-two{
-    width: 100px;
-}
-.button-white {
-    background-color: rgb(255, 255, 255);
-}
-
-.button-black {
-    background-color: rgb(49, 51, 56);
-}
-
-.button-violet {
-    background-color: rgb(114, 137, 218);
+    width: 150px;
 }
 
 .button:hover {
-     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
     /*perche cosi prende tutti i bordi in modo uniforme?*/
 }
-.button-login:hover{
-    color: rgb(37, 94, 233);
-}
-div.menu>a {
-    width: calc(100% / 6);
+
+
+
+
+/*FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    */
+.footer-container{
+    border-bottom: 1px solid rgb(114, 137, 218);
 }
 
-.nav {
-    height: 30px;
-    line-height: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.footer-container-final {
     justify-content: space-around;
 }
 
-header.flex-container {
-    background-color: rgb(37, 94, 233);
+footer> .flex-container {
+    border-top: 1px solid rgb(114, 137, 218); 
+
+}
+.icon-container{
+    justify-content: space-around;
+    width: 50%;
 }
 
+.container-5{
+    width: calc(100% / 5 - 10px);
+    margin-right: 10px;
+}
+
+/* IMAGE    IMAGE    IMAGE    IMAGE    IMAGE    */
 .head {
     background-image: url(../img/jumbo.png);
     background-size: cover;
@@ -240,16 +270,19 @@ header.flex-container {
 
 .img-1{
     background-image: url(../img/item1.svg);
-    background-size: cover;
-    background-size: contain;
-    background-repeat: no-repeat;
+background-size: cover;
+    min-height: 300px;  
+    background-position: 100%;
+    max-width: 35%; 
 }
 
 .img-2{
     background-image: url(../img/item2.svg);
-    background-size: cover;
     background-size: contain;
     background-repeat: no-repeat;
+    min-height: 300px;
+    background-position: 0;  
+    max-width: 35%;   
 }
 
 .img-3{
@@ -257,34 +290,13 @@ header.flex-container {
     background-size: cover;
     background-size: contain;
     background-repeat: no-repeat;
+    min-height: 300px;  
+    background-position: 100%; 
+    max-width: 35%; 
 }
-
-.container-5{
-    width: calc(100% / 5 - 10px);
-    margin-right: 10px;
-}
-
-.footer-container {
-    height: 30px;
-    line-height: 30px;
-    justify-content: space-around;
-}/* riguardsare centratura footer*/
-
-footer> .flex-container {
-    border-top: 1px solid rgb(114, 137, 218); 
-
-}
-.icon-container{
-    justify-content: space-around;
-}
-
 
 .bg-text-bottom{
     background-image: url(../img/stars.svg);
     background-size: cover;
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 40%;
 }
-
-
-
