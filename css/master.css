@@ -26,7 +26,7 @@ h1 {
 h2{
     font-size: 1,5rem;
 }
-
+/* modificare sia h3 che h4 stesso font ma marg e padndare classe nell html*/
 h3{
     font-size: 1rem;
     margin-bottom: 10px;
@@ -37,7 +37,7 @@ h4{
     font-weight: 300;
     padding-bottom: 10px;
 }
-
+/* dare a p classe align-left*/
 p{
     font-size: 1.3rem;
     text-align: left;
@@ -73,10 +73,6 @@ p{
     margin-bottom: 20px;
 }
 
-mar-bot-10{
-    margin-bottom: 10px;
-}
-
 .mar-top-10{
     margin-top: 10px;
 }
@@ -84,7 +80,7 @@ mar-bot-10{
 .mar-top-20{
     margin-top: 20px;
 }
-
+/*è horizontal padding quindi HP*/
 .hm-20{
     padding: 0 20px;
 }
@@ -114,12 +110,12 @@ mar-bot-10{
     width: 90%;
 }
 
-.wid-50{
-    width: 50%;
-}
-
 .wid-70{
     width: 70%;
+}
+
+.wid-50{
+    width: 50%;
 }
 
 .wid-60 {
@@ -130,8 +126,6 @@ mar-bot-10{
     width:15%;
 }
 
-.wid-15 {
-    width: 15%;
 }
 /*BG-COLOR     BG-COLOR     BG-COLOR     BG-COLOR     */
 .bg-white {
@@ -187,7 +181,6 @@ div.menu>a {
 header{
     background-color: rgb(37, 94, 233);
 }
-
 
 
 .font-menu>a:hover {
@@ -251,6 +244,8 @@ footer> .flex-container {
     border-top: 1px solid rgb(114, 137, 218); 
 
 }
+
+/*dare una classe wid-50*/
 .icon-container{
     justify-content: space-around;
     width: 50%;
@@ -261,7 +256,8 @@ footer> .flex-container {
     margin-right: 10px;
 }
 
-/* IMAGE    IMAGE    IMAGE    IMAGE    IMAGE    */
+/* IMAGE    IMAGE    IMAGE    IMAGE    IMAGE*/
+/*no repeat qui dove c'è  cover non dovrebbe fare nulla cancella e dovrebbero essere tutti cover*/
 .head {
     background-image: url(../img/jumbo.png);
     background-size: cover;
