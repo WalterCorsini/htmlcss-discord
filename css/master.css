@@ -244,7 +244,7 @@ img.flags{
 }
 
 .footer-container-final {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 footer> .flex-container {
