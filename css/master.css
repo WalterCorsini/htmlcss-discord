@@ -18,7 +18,7 @@ img {
 body {
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+/* FONT-SIZE    FONT-SIZE    FONT-SIZE    */
 h1 {
     font-size: 2.5rem;
 }
@@ -39,9 +39,8 @@ h4 {
 
 p {
     font-size: 1.3rem;
-    text-align: left;
 }
-
+/* PROPERTY FLEX CONTAINER */
 .container-v-center {
     flex-direction: column;
     align-items: center;
@@ -52,7 +51,6 @@ p {
     justify-content: center;
 }
 
-
 .flex {
     display: flex;
 }
@@ -60,7 +58,7 @@ p {
 .grow {
     flex-grow: 1;
 }
-
+/* COMMONS BUTTON */
 .nav>.link:hover,
 .container-5>h4:hover,
 nav>img,
@@ -79,6 +77,10 @@ nav>img,
     /*perche cosi prende tutti i bordi in modo uniforme?*/
 }
 
+.pad-button {
+    padding: 10px;
+}
+
 /* TEXT ALIGN */
 .align-center {
     text-align: center;
@@ -93,8 +95,12 @@ nav>img,
 }
 
 /* MARGIN */
-.mb-10 {
-    margin-bottom: 10px;
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 
 .mb-20 {
@@ -103,14 +109,6 @@ nav>img,
 
 mb-10 {
     margin-bottom: 10px;
-}
-
-.mt-10 {
-    margin-top: 10px;
-}
-
-.mt-20 {
-    margin-top: 20px;
 }
 
 /* PADDING */
@@ -130,41 +128,37 @@ mb-10 {
     padding-top: 10px;
 }
 
-.pb-10 {
-    padding-bottom: 10px;
-}
-
 .pb-20 {
     padding-bottom: 20px;
 }
 
-/* WIDTH CONTAINER */
-.w-100 {
-    width: 100%;
+.pb-10 {
+    padding-bottom: 10px;
 }
 
-.w-90 {
-    width: 90%;
+/* WIDTH CONTAINER */
+.w-15 {
+    width: 15%;
 }
 
 .w-50 {
     width: 50%;
 }
 
-.w-70 {
-    width: 70%;
-}
-
 .w-60 {
     width: 60%;
 }
 
-.w-15 {
-    width: 15%;
+.w-70 {
+    width: 70%;
 }
 
-.w-15 {
-    width: 15%;
+.w-90 {
+    width: 90%;
+}
+
+.w-100 {
+    width: 100%;
 }
 
 /*BG-COLOR  & COLOR   BG-COLOR  & COLOR   BG-COLOR*/
@@ -209,17 +203,14 @@ div.menu>a {
 .nav {
     justify-content: space-around;
 }
-/* HEADER   HEADER   HEADER   HEADER   HEADER    */
+
 header {
     background-color: rgb(37, 94, 233);
 }
 
-.bg-black:hover{
-color: rgb(143, 175, 254);
-}
-
-.pad-button {
-    padding: 10px;
+/* HEAD  HEAD  HEAD   HEAD   HEAD    */
+.bg-black:hover {
+    color: rgb(143, 175, 254);
 }
 
 .download-two {
@@ -251,7 +242,7 @@ color: rgb(143, 175, 254);
     /* paddingt: 10px; */
 }
 
-.foot-logo{
+.foot-logo {
     width: 300px;
 }
 
@@ -263,14 +254,21 @@ color: rgb(143, 175, 254);
 img.flags {
     height: 20px;
     background-size: cover;
-    paddingt: 10px;
+    padding: 10px;
 }
 
-.button-reg:hover{
+.button-reg:hover {
     color: rgb(35, 39, 42);
 }
 
-/* IMAGE    IMAGE    IMAGE    IMAGE    IMAGE    */
+select{
+    border: none;
+}
+
+.flag-italy{
+background-image: url(../img/ita.png);
+}/* 
+IMAGE    IMAGE    IMAGE    IMAGE    IMAGE    */
 .head {
     background-image: url(../img/jumbo.png);
     background-size: cover;
@@ -312,11 +310,11 @@ img.flags {
     width: 40%;
 }
 
-.wave-gray{
-    filter:invert(110%) sepia(0%) saturate(3%) hue-rotate(-2deg) brightness(100%) contrast(65%);
+.wave-gray {
+    filter: invert(110%) sepia(0%) saturate(3%) hue-rotate(-2deg) brightness(100%) contrast(65%);
     width: 100%;
 }
 
-.rotate{
+.rotate {
     transform: rotate(180deg);
 }
