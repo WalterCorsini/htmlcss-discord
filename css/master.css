@@ -70,6 +70,7 @@ nav>img,
 }
 
 .button {
+    display: inline-block;  /* ha una sua dimensione ,mentre il testo va a capo e il bottone si spezza*/
     border-radius: 20px;
     font-size: 1rem;
 }
@@ -232,6 +233,7 @@ header {
 .footer-container-final {
     justify-content: space-between;
     border-top: 1px solid rgb(114, 137, 218);
+    /* puo essere anche un hr tra un contenitore ed un altro ma all'interno del contenitore e fa una linea grande quanto il contenitore e non quanto tutta la pagina */
 }
 
 .icon-container {
@@ -278,12 +280,12 @@ IMAGE    IMAGE    IMAGE    IMAGE    IMAGE    */
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-position: bottom;
-    min-height: 650px;
-    
+    /* min-height: 650px; */
     justify-content: space-around;
 }
-
-.img-1 {
+/* creato immagini in background ma complicato da gestire
+bastava inserire un immagine nel contenitore che avevamo gia creato */
+/* .img-1 {
     background-image: url(../img/item1.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -308,12 +310,14 @@ IMAGE    IMAGE    IMAGE    IMAGE    IMAGE    */
     min-height: 300px;
     background-position: 100%;
     max-width: 35%;
-}
+} */
 
-.bg-text-bottom {
+.bg-text-bottom { /*background al tsto e non ad un div che contiene il testo e formatto con padding e font il testo,applico contain all'immagine ed una larghezza al testo*/
     background-image: url(../img/stars.svg);
-    background-size: cover;
-    width: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    width: 50%;
 }
 
 .wave-gray {
