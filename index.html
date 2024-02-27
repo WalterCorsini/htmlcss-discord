@@ -19,13 +19,13 @@
         <!-- CONTAINER NAV -->
         <nav class="nav flex w-90 pt-20">
             <a href="http://www.discord.com"><img class=" w-30" src="./img/logo.svg" alt="logo"></img></a>
-            <div class="nav flex white w-30 grow"> <!-- di solito la semantica corretta è una lista  con dentro anchor tag e non un div con anchor tag-->
-                <a class="link" href="https://discord.com/download">Scarica</a>
-                <a class="link" href="https://discord.com/servers">Perche Discord</a>
-                <a class="link" href="https://discord.com/nitro">Nitro</a>
-                <a class="link" href=https://discord.com/safety"">Sicurezza</a>
-                <a class="link" href="https://support.discord.com/hc/it">assistenza</a>
-            </div>
+            <ul class="nav flex white w-30 grow">
+                <li class="list-none"><a class="link" href="https://discord.com/download">Scarica</a></li>
+                <li class="list-none"><a class="link" href="https://discord.com/servers">Perche Discord</a></li>
+                <li class="list-none"><a class="link" href="https://discord.com/nitro">Nitro</a></li>
+                <li class="list-none"><a class="link" href=https://discord.com/safety"">Sicurezza</a></li>
+                <li class="list-none"><a class="link" href="https://support.discord.com/hc/it">assistenza</a></li>
+            </ul>
             <a href="" class="button button-login bg-white pad-button">Accedi</a>
         </nav>
         <!-- /CONTAINER NAV -->
@@ -55,14 +55,12 @@
                     Discord nel tuo
                     browser</a>
             </div>
-            </div>
         </div>
         <!-- /CONTAINER HEAD -->
 
         <!-- CONTAINER NUMBER ONE -->
         <div class="hero flex container-h-center w-100">
             <img src="./img/item1.svg" alt="">
-            <!-- <div class="img-1 flex w-60 pt-20 pb-20"></div> -->  <!--meglio come immagine che backgorund  altrimenti bisogna gestirla-->
             <div class=" w-15 pt-20 pb-20">
                 <h3 class="mb-10 pb-10 pt-30 align-left">Un luogo a invito con tutto lo spazio
                     necessario
@@ -82,7 +80,6 @@
                     possono vedere che sei li e unirsi istantaneamente senza dover chiame.</p>
             </div>
             <img src="./img/item2.svg" alt="">
-            <!-- <div class="img-2 w-60 pt-20 pb-20"></div> -->
         </div>
         <img class="wave-gray rotate" src="./img/wave.svg" alt="">
         <!-- /CONTAINER NUMBER TWO -->
@@ -90,7 +87,6 @@
         <!-- CONTAINER NUMBER THREE -->
         <div class="flex container-h-center w-100">
             <img src="./img/item3.svg" alt="">
-            <!-- <div class="img-3 w-60 pt-20 pb-20"></div> -->
             <div class="w-15 pt-20 pb-20">
                 <h3 class="mb-10 pb-10 pt-30 align-left">Da pochi a un fandom</h3>
                 <p class="align-left">dai inizio a una comunity di qualsiasi dimensione con strumenti di moderazione e
@@ -111,7 +107,7 @@
                     stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione
                     di disegno con la condivisione dello schermo.</p>
                 <img src="./img/item4-big.svg" alt="">
-                    <h3 class="bg-text-bottom mb-10 align-center">Pronto a iniziare la tua avventura?</h3>
+                <h3 class="bg-text-bottom mb-10 align-center">Pronto a iniziare la tua avventura?</h3>
                 <a class="donwnload-two button bg-violet white pad-button"
                     href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86">&#129047;
                     Scarica per Windows</a>
@@ -126,14 +122,12 @@
     <footer>
 
         <!--  CONTAINER FIVE COLUMN -->
-        <!-- footer-container non esiste credo controllare -->
-        <div class="footer-container flex container-h-center w-100 bg-darkgrey">
+        <div class="flex container-h-center w-100 bg-darkgrey">
             <div class="cont-5-container container-h-center flex w-60 pt-30 pb-20">
 
                 <!-- COLUMN ONE -->
                 <div class="split-5">
                     <h2 class=" mb-20 violet align-left"> Il tuo posto per parlare</h2>
-                    <!-- <img class="flags" src="./img/ita.png" alt=""> -->
                     <select class="bg-darkgrey white" name="" id="">
                         <option value="English">
                             English(default)
@@ -145,70 +139,185 @@
                             Français
                         </option>
                     </select>
-                    <!-- <span class="white">Italiano &#8964;</span> -->
-                    <!-- anche questa è una lista e non un div piu corretto semanticamente fargli come lista -->
-                    <!--  -->
-                    <div class="icon-container flex mt-10 align-left white w-90">
-                        <a class="fa-brands fa-twitter" href="https://twitter.com/discord"></a>
-                        <a class="fa-brands fa-instagram" href="https://www.instagram.com/discord/"></a>
-                        <a class="fa-brands fa-facebook" href="https://www.facebook.com/discord/"></a>
-                        <a class="fa-brands fa-youtube" href="https://www.youtube.com/discord"></a>
-                    </div>
+                    <ul class="icon-container flex mt-10 align-left white w-90">
+                        <li class="list-none"><a class="fa-brands fa-twitter" href="https://twitter.com/discord"></a>
+                        </li>
+                        <li class="list-none"><a class="fa-brands fa-instagram"
+                                href="https://www.instagram.com/discord/"></a></li>
+                        <li class="list-none"><a class="fa-brands fa-facebook"
+                                href="https://www.facebook.com/discord/"></a></li>
+                        <li class="list-none"><a class="fa-brands fa-youtube"
+                                href="https://www.youtube.com/discord"></a></li>
+                    </ul>
                 </div>
                 <!-- /COLUMN ONE -->
 
                 <!-- COLUMN TWO -->
-                <!-- lista no h4 -->
                 <div class="split-5">
                     <h4 class="pb-10 align-center violet">Prodotto</h4>
-                    <h4 class="pb-10 align-center white">Scarica</h4>
-                    <h4 class="pb-10 align-center white">Nitro</h4>
-                    <h4 class="pb-10 align-center white">Stato</h4>
-                    <h4 class="pb-10 align-center white">App Directory</h4>
-                    <h4 class="pb-10 align-center white">Nuova esperienza per dispositivi mobili</h4>
+                    <ul class="list-none">
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Scarica</h4>
+                            <link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Nitro</h4>
+                            <link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Stato</h4>
+                            <link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">App Directory</h4>
+                            <link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Nuova esperienza per dispositivi mobili</h4>
+                            <link>
+                        </li>
+                    </ul>
                 </div>
                 <!-- /COLUMN TWO -->
 
                 <!-- COLUMN THREE -->
-                <!-- lista no h4 -->
                 <div class="split-5">
                     <h4 class="pb-10 align-center violet">Compagnia</h4>
-                    <h4 class="pb-10 align-center white">Chi siamo</h4>
-                    <h4 class="pb-10 align-center white">Lavora con noi</h4>
-                    <h4 class="pb-10 align-center white">Marchio</h4>
-                    <h4 class="pb-10 align-center white">Notiziario</h4>
+                    </li>
+                    <ul>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Chi siamo</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Lavora con noi</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Marchio</h4>
+                            </link>
+                         </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Notiziario</h4>
+                            </link>
+                        </li>
+                    </ul>
                 </div>
                 <!-- /COLUMN THREE -->
 
                 <!-- COLUMN FOUR -->
                 <div class="split-5">
-                <!-- lista no h4 -->
                     <h4 class="pb-10 align-center violet">Risorse</h4>
-                    <h4 class="pb-10 align-center white">Università</h4>
-                    <h4 class="pb-10 align-center white">Assistenza</h4>
-                    <h4 class="pb-10 align-center white">Sicurezza</h4>
-                    <h4 class="pb-10 align-center white">Blog</h4>
-                    <h4 class="pb-10 align-center white">Suggerimenti</h4>
-                    <h4 class="pb-10 align-center white">StreamKit</h4>
-                    <h4 class="pb-10 align-center white">Creatori</h4>
-                    <h4 class="pb-10 align-center white">Comunity</h4>
-                    <h4 class="pb-10 align-center white">Sviluppatori</h4>
-                    <h4 class="pb-10 align-center white">Gaming</h4>
-                    <h4 class="pb-10 align-center white">Articoli ufficiali di terza parti</h4>
+                    </li>
+                    <ul>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Università</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Assistenza</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Sicurezza</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Blog</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Suggerimenti</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">StreamKit</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Creatori</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Comunity</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Sviluppatori</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Gaming</h4>
+                            </link>
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                 <h4 class="link pb-10 align-center white">Articoli ufficiali di terza parti</h4>
+                            </link>
+                        </li>
+                    </ul>
                 </div>
                 <!-- /COLUMN FOUR -->
 
                 <!-- COLUMN FIVE -->
-                <!-- lista no h4  il titolo non fa parte della lista perche tutti gli elementi della lista hanno uguale importanza -->
                 <div class="split-5">
                     <h4 class="pb-10 align-center violet">Norme</h4>
-                    <h4 class="pb-10 align-center white">Termini</h4>
-                    <h4 class="pb-10 align-center white">Politica sulla privacy</h4>
-                    <h4 class="pb-10 align-center white">Impostazioni dei cookie</h4>
-                    <h4 class="pb-10 align-center white">Linee guida</h4>
-                    <h4 class="pb-10 align-center white">Riconoscimenti</h4>
-                    <h4 class="pb-10 align-center white">Licenze</h4>
-                    <h4 class="pb-10 align-center white">informazioni sulla compagnia</h4>
+                    <ul>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Termini</h4>
+                            </link>    
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Politica sulla privacy</h4>
+                            </link>    
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Impostazioni dei cookie</h4>
+                            </link>    
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Linee guida</h4>
+                            </link>    
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Riconoscimenti</h4>
+                            </link>    
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">Licenze</h4>
+                            </link>    
+                        </li>
+                        <li class="list-none">
+                            <link rel="stylesheet" href="">
+                                <h4 class="link pb-10 align-center white">informazioni sulla compagnia</h4>
+                            </link>    
+                        </li>
+                    </ul>
                 </div>
                 <!-- /COLUMN FIVE -->
             </div>
